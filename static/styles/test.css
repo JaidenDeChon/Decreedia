@@ -1,0 +1,75 @@
+html {
+  font-family: 'Roboto'
+}
+
+body {
+  background: #e2e1e0;
+}
+
+
+
+.card {
+  font-family: 'Roboto';
+  max-width: 300px;
+  margin: 15px 15px 15px 15px;
+  background: #fff;
+
+  /* Shadow Effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition-duration: .25s;
+}
+
+
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+
+.thumbnail {
+  /* These two maximum values mean maximum of their parent (.card) */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.card p {
+  line-height: 110%;
+}
+
+
+.title {
+  margin-top: 10px;
+  font-size: 200%;
+}
+
+
+
+.card-body {
+  padding: 10px 15px 10px 15px;
+}
+
+
+.description {
+  font-size: 125%;
+}
+
+.card-footer {
+  padding: 0px 0px 15px 10px;
+}
+
+.card-action {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}

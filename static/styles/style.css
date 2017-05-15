@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    font-family: Roboto, Arial, monospace;
+}
+
+body {
+    background-color: #e2e1e0;
+
+}
+
+main {
+    width: 90%;
+	margin: 50px auto;
+
+	column-width: 175px;
+	column-count: 4;
+
+	-moz-column-width: 175px;
+	-moz-column-count: 4;
+
+	-webkit-column-width: 175px;
+	-webkit-column-count: 4;
+
+	-webkit-column-gap: 1px;
+	-moz-column-gap: 1px;
+	column-gap: 1px;
+}
+
+.card {
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: #fff;
+
+    /* Shadow Effect */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    transition-duration: .25s;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.thumbnail {
+    /* These two maximum values mean maximum of their parent (.card) */
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.card p {
+    line-height: 110%;
+}
+
+.title {
+    padding: 15px 15px 0 15px;
+    /*margin-top: 10px;*/
+    font-size: 200%;
+}
+
+.card-body {
+}
+
+.description {
+    font-size: 125%;
+    padding: 0 15px 15px 15px;
+}
+
+.card-footer {
+    padding: 15px;
+}
+
+.card-action {
+    text-decoration: none;
+    font-weight: bold;
+}
+

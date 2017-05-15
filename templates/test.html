@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="static/test.css">
+
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+{% for i in feed1 %}
+
+<div class="card">
+  <img class="thumbnail" src="{{ i.thumbnail }}">
+  <div class="card-body">
+    <p class="title">{{ i.title }}</p>
+    <p class="description">{{ i.description }}</p>
+  </div>
+  <hr>
+  <div class="card-footer">
+    <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><a href="{{ i.link }}" class="card-action">Read More</a></button>
+    <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><a href="" class="card-action">Share</a></button>
+  </div>
+</div>
+
+{% endfor %}
+
+</body>
+</html>
